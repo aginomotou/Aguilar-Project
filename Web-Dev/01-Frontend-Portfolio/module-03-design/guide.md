@@ -18,6 +18,8 @@ Design and implement your portfolio's visual identity:
 4. Design a hero section with your name, a short tagline, and a call-to-action button.
 5. Style your project cards to be visually distinct and scannable.
 
+> **Need design help?** Check `resources/resources.md` in this module for recommended tools and references.
+
 ### Acceptance Criteria
 - Color palette has no more than 4 colors used consistently.
 - Typography uses at most 2 font families.
@@ -26,4 +28,4 @@ Design and implement your portfolio's visual identity:
 - The portfolio looks polished at a glance (show it to someone — does it look intentional?).
 
 ## Stretch Goal
-- Create a style guide page that documents your colors, fonts, spacing tokens, and component styles
+- Create a style guide page that documents your colors, fonts, spacing tokens, and component colors

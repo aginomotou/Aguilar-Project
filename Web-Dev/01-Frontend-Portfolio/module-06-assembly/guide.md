@@ -37,11 +37,14 @@ After this module, you should be able to assemble your portfolio from all previo
 4. Run the W3C validator on your HTML.
 
 ## Task
-1. Assemble all module work into a single cohesive portfolio site in the `projects/` folder or your fork root.
-2. Ensure all CSS and JS files are linked correctly.
-3. Push to GitHub.
-4. Deploy to Vercel.
-5. Submit your Vercel URL.
+1. Use the starter files in `starter-files/` as your base — this is a pre-styled template combining all 5 previous modules so you don't start from scratch.
+2. Customize the starter files: replace placeholder text, add your own projects, update colors, and refine the design.
+3. Ensure all CSS and JS files are linked correctly.
+4. Push to GitHub.
+5. Deploy to Vercel.
+6. Submit your Vercel URL.
+
+> **Getting lost?** The `starter-files/index.html` gives you a complete working template. Your job is to customize it, not build from zero.
 
 ### Acceptance Criteria
 - Portfolio is live on Vercel and accessible via URL.
