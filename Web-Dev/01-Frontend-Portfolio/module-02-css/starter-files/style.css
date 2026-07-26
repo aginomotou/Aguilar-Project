@@ -1,0 +1,22 @@
+:root {
+    --color-primary: #2563eb;
+    --color-secondary: #1e293b;
+    --color-bg: #ffffff;
+    --color-text: #1e293b;
+    --spacing-unit: 8px;
+    --font-main: system-ui, -apple-system, sans-serif;
+    --max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+}
