@@ -10,16 +10,17 @@
     <button id="fetch-btn">Fetch Data</button>
     <pre id="output"></pre>
     <script>
-        document.getElementById('fetch-btn').addEventListener('click', function () {
-            fetch('https://jsonplaceholder.typicode.com/posts/1')
+        document.getElementById('fetch-btn').addEventListener('click', function () { // finds the 'fetch-btn'; condition for when user clicks the btn
+            // fetch('https://google.com') <-- this one triggers CORS error (failed to fetch)
+            fetch('https://jsonplaceholder.typicode.com/posts/1') // initiates async HTTP request
                 .then(function (response) {
-                    return response.json();
+                    return response.json(); //receives response and converts it into js object (parang parsing lang ganon)
                 })
                 .then(function (data) {
                     document.getElementById('output').textContent = JSON.stringify(data, null, 2);
-                })
-                .catch(function (error) {
-                    document.getElementById('output').textContent = 'Error: ' + error.message;
+                }) // finds 'output', converts js object to json string formatted w/ 2-space indentation; renders it sa 'output'
+                .catch(function (error) { // catches error
+                    document.getElementById('output').textContent = 'Error: ' + error.message; //renders error sa 'output' din
                 });
         });
     </script>

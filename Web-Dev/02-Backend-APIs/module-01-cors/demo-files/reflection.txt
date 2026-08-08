@@ -1,0 +1,6 @@
+from my understanding, cors is a mechanism based on same-origin policy where it determines if a specific origin has access to the resources. 
+same-origin policy refers to urls sharing the same host, protocol, and port. 
+the browser sends request headers, whcih serves as the basis of whether or not access will be granted.
+the request could either be simple requests (get/post) or non-simple requests (put/delete). for non-simple requests, the browser sends an options
+request (preflight check) before the main request. this preflight check asks the server for permission before sending the actual payload.
+the server then sends response headers indicating which origins, http methods, and headers are allowed. 
