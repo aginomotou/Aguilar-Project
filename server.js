@@ -66,6 +66,30 @@ app.post('/projects', async (req, res) => {
   });
 });
 
+// 3. GET /projects/:id - retrieve a single project by ID
+app.get('/projects/:id', async (req, res) => {
+  const { id } = req.params;
+
+  const { data, error } = await supabase
+    .from('projects')
+    .select('*')
+    .eq('id', id)
+    .single();
+
+  if (error || !data) {
+    return res.status(404).json({
+      status: 'error',
+      message: "We couldn't find a project with that ID.",
+      code: 'NOT_FOUND'
+    });
+  }
+
+  return res.status(200).json({
+    status: 'success',
+    data: data
+  });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`);
